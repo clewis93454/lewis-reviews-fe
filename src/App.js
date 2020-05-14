@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage";
@@ -11,7 +11,7 @@ const App = () => {
     <div className="App">
       <Header />
       <main>
-        <Router>
+        <Switch>
           <Route exact path="/">
             <HomePage />
           </Route>
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/contact">
             <ContactPage />
           </Route>
-        </Router>
+        </Switch>
       </main>
       <Footer />
     </div>
