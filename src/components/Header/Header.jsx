@@ -2,13 +2,14 @@ import React from "react";
 import "./Header.css";
 import { Link, withRouter } from "react-router-dom";
 import HeaderLink from "./HeaderLink/HeaderLink";
+import StyledHR from "../StyledHR/StyledHR";
 import logo from "../../images/icons8-hamburger-50.png";
 
 const Header = () => {
   const currentPath = window.location.pathname;
 
   return (
-    <div className="header">
+    <header className="header">
       <nav className="header-nav-container">
         <Link to="/" className="header-logo">
           <img src={logo} alt="logo" />
@@ -24,8 +25,8 @@ const Header = () => {
           />
         </ul>
       </nav>
-      <hr />
-    </div>
+      <StyledHR />
+    </header>
   );
 };
 

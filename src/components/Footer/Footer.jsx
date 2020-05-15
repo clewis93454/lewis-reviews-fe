@@ -1,15 +1,17 @@
 import React from "react";
 import "./Footer.css";
+import StyledHr from "../StyledHR/StyledHR";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <hr />
-      <p>Footer</p>
-    </div>
+    <footer className="footer">
+      <StyledHr />
+      <p>
+        Lewis Reviews | &copy; Copyright 2020 | Logo provided by{" "}
+        <a href="https://icons8.com">Icons8</a>
+      </p>
+    </footer>
   );
 };
 
 export default Footer;
-
-// TODO: add <a target="_blank" href="https://icons8.com/icons/set/hamburger">Hamburger icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
