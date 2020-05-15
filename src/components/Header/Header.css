@@ -1,0 +1,30 @@
+/* font for logo */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+.header {
+  padding: 15px;
+  text-align: center;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  color: black;
+}
+
+.header-logo-text {
+  margin-left: 10px;
+}
+
+.header-links-container {
+  display: flex;
+  list-style-type: none;
+  padding-left: 20px;
+  text-align: center;
+}
