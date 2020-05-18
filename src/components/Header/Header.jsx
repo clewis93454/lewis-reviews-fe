@@ -17,6 +17,12 @@ const Header = () => {
         </Link>
         <ul className="header-links-container">
           <HeaderLink path="/" text={"Home"} currentPath={currentPath} />
+          <HeaderLink
+            path="/reviews"
+            alternatePath="/review"
+            text={"Reviews"}
+            currentPath={currentPath}
+          />
           <HeaderLink path="/about" text={"About"} currentPath={currentPath} />
           <HeaderLink
             path="/contact"

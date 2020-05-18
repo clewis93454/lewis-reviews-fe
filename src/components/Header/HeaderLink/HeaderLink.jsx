@@ -3,12 +3,16 @@ import "./HeaderLink.css";
 import { Link } from "react-router-dom";
 
 const HeaderLink = (props) => {
-  const { currentPath, path, text } = props;
+  const { currentPath, path, alternatePath, text } = props;
   return (
     <li>
       <Link
         className={"header-link"}
-        id={`${currentPath === path ? "header-link-active" : ""}`}
+        id={`${
+          currentPath === path || currentPath === alternatePath
+            ? "header-link-active"
+            : ""
+        }`}
         to={props.path}
       >
         {text}
